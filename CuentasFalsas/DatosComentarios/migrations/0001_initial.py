@@ -24,6 +24,7 @@ class Migration(migrations.Migration):
                 ('multimedia', models.DecimalField(decimal_places=2, max_digits=3)),
                 ('links', models.DecimalField(decimal_places=2, max_digits=3)),
                 ('comentarios_raros', models.DecimalField(decimal_places=2, max_digits=3)),
+                ('label', models.DecimalField(decimal_places=2, max_digits=3)),
             ],
         ),
     ]

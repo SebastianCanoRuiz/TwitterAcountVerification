@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class dataset(models.Model):
+class DatosComentarios(models.Model):
     id = models.IntegerField(primary_key=True)
     perfil = models.CharField(max_length=500)
     comentario = models.CharField(max_length=500)
