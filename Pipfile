@@ -7,6 +7,8 @@ verify_ssl = true
 
 [packages]
 django = "*"
+pymysql = "*"
+mysqlclient = "*"
 
 [requires]
 python_version = "3.8"
