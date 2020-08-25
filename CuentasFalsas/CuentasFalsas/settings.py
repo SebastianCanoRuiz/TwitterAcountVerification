@@ -30,6 +30,9 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'DatosComentarios',
@@ -50,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'CuentasFalsas.urls'
@@ -121,10 +125,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'rest_framework.permissions.IsAuthenticated',
     ),
 } """
-
-CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_CREDENTIALS = True
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
